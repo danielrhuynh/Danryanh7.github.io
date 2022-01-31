@@ -1,6 +1,7 @@
 *
 {
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body
@@ -21,4 +22,39 @@ body
     width: 400px;
     height: auto;
     margin: 10px;
+}
+
+.icon
+{
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.dock
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    background-color: #343b5a;
+    margin: auto;
+    width: 450px;
+    height: 75px;
+    border-radius: 20px;
+}
+
+.icon_row
+{
+    display: flex;
+    justify-content: center;
+
+    padding: 10px 0px;
+    max-height: 100%;
+}
+
+.icon_row img
+{
+    display: inline-flex;
+    margin: 0 20px;
 }
