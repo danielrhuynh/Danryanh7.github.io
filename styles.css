@@ -5,7 +5,7 @@
 
 body
 {
-    background-color: #1e1d33;
+    background-color: #1d2133;
 }
 
 .container
@@ -13,12 +13,12 @@ body
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px;
+    margin: 30px;
 }
 
 .window
 {
     width: 400px;
     height: auto;
-    margin: 25px;
+    margin: 10px;
 }
