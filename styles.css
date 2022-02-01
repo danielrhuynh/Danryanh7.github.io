@@ -1,61 +1,108 @@
+/* Page Setup */
 *
 {
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+html
+{
+    width: 100%;
+    min-width: 100%;
+}
+
 body
 {
-    background-color: #1d2133;
+    background-color: #2f2646;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
 }
+
+/* Classes */
 
 .container
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-evenly;
     margin: 30px;
-    width: 100%;
 }
 
 .window
 {
     width: 400px;
     height: auto;
-    margin: 10px;
+    margin: 40px 10px;
+    top: 0;
+    transition: transform ease 300ms;
 }
 
 .icon
 {
     max-width: 100%;
     border-radius: 10px;
-    margin-right: 25px;
+    top: 0;
+    transition: transform ease 300ms;
+}
+
+.link
+{
+    max-width: 55px;
+    max-height: auto;
+    position: relative;
 }
 
 .dock
 {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 15px;
-    background-color: #343b5a;
+    position: fixed;
+    bottom: 5%;
+    background-color: #373049;
     margin: auto;
     width: 450px;
     height: 75px;
     border-radius: 50px;
+    z-index: 1;
 }
 
 .icon_row
 {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     padding: 10px 0px;
     max-height: 100%;
 }
 
-.icon_row img
+.icon_row a
 {
     display: inline-flex;
-    margin: 0 20px;
+   margin: 0px 20px;
+}
+
+/* Animations in CSS */
+.icon:hover
+{
+    transform: translate(0, -15px);
+}
+
+.window:hover
+{
+    transform: translate(0, -20px);
+}
+
+/* Layout for screens over the 990px breakpoint */
+@media screen and (min-width: 990px)
+{
+    .leftCol
+    {
+        position: relative;
+        left: 10px;
+    }
+    .rightCol
+    {
+        position: relative;
+        top: 125px;
+    }
 }
