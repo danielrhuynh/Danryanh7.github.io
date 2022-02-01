@@ -6,31 +6,36 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="icon" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/laptop_1f4bb.png">
         <link rel="stylesheet" href="styles.css">
+        <script src="logic.js"></script>
     </head>
     
     <body>
         <div class="container">
-            <div class="window" style="position: relative; left: -110px; background-color: rgb(230, 230, 230); border-radius: 25px;">
-                <img style="max-width: 80%; height: auto;" src="resources/angular_dev.svg" alt="About Me">
-                <h6 style="text-align: center; margin-top: 5px; font-weight: bold;">Dan Huynh</h4>
-                <h6 style="text-align: center; font-size: 8pt;">Full-Stack Developer | Engineer | Storyteller</h4>
+            <div class="leftCol">
+                <div style=" width: 400px; height: auto; margin: 40px 10px; top: 0; background-color: rgb(230, 230, 230); border-radius: 25px;">
+                    <img style="max-width: 80%; height: auto;" src="resources/angular_dev.svg" alt="About Me">
+                    <h6 style="text-align: center; margin-top: 5px; font-weight: bold;">Dan Huynh</h4>
+                    <h6 style="text-align: center; padding-bottom: 10px; font-size: 8pt;">Full-Stack Developer | Engineer | Storyteller</h4>
+                </div>
+                <div class="window">
+                    <img id="aboutMe" style="max-width: 100%; height: auto;" src="resources/about_me.png" alt="About Me">
+                </div>
             </div>
-            <div class="window" style="position: relative; top: 25px; left: 10px;">
-                <img style="max-width: 100%; height: auto;" src="resources/about_me.png" alt="About Me">
-            </div>
-            <div class="window" style="position: relative; top: 15px; left: 100px;">
-                <img style="max-width: 100%; height: auto;" src="resources/projects.png" alt="My Projects!">
-            </div>
-            <div class="window" style="position: relative; top: -15px; left: 300px;">
-                <img style="max-width: 100%; height: auto;" src="resources/tech_stuff.png" alt="Tech Stuff!">
+            <div class="rightCol">
+                <div class="window">
+                    <img style="max-width: 100%; height: auto;" src="resources/projects.png" alt="My Projects!">
+                </div>
+                <div class="window">
+                    <img style="max-width: 100%; height: auto;" src="resources/tech_stuff.png" alt="Tech Stuff!">
+                </div>
             </div>
         </div>
         <div class="dock">
             <div class="icon_row">
-                <img class="icon" src="resources/linkedin_filled.png" alt="My Linkedin!">
-                <img class="icon" src="resources/email.png" alt="Email Me!">
-                <img class="icon" src="resources/github.png" alt="My Github!">
-                <img class="icon" src="resources/spotify.png" alt="My tunes!">
+                <a class="link" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank"><img class="icon" src="resources/linkedin_filled.png" alt="My Linkedin!"></a>
+                <a class="link" href="mailto:d35huynh@uwaterloo.ca" target="_blank"><img class="icon" src="resources/email.png" alt="Email Me!"></a>
+                <a class="link" href="https://github.com/Danryanh7" target="_blank"><img class="icon" src="resources/github.png" alt="My Github!"></a>
+                <a class="link" href="https://www.spotify.com/ca-en/" target="_blank"><img class="icon" src="resources/spotify.png" alt="My tunes!"></a>
             </div>
         </div>
     </body>
