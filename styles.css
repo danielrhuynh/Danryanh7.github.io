@@ -14,7 +14,9 @@ body
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
     margin: 30px;
+    width: 100%;
 }
 
 .window
