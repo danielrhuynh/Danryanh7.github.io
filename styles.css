@@ -99,10 +99,16 @@ body
     {
         position: relative;
         left: 10px;
+        top: -20px;
     }
     .rightCol
     {
         position: relative;
-        top: 125px;
+        top: 75px;
+    }
+    .rightCol .window
+    {
+        width: 350px;
+        height: auto;
     }
 }
