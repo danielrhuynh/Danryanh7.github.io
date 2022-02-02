@@ -139,10 +139,11 @@ body
     {
         position: relative;
         left: 10px;
+        top: -25px;
     }
     .rightCol
     {
         position: relative;
-        top: 125px;
+        top: 25px;
     }
 }
