@@ -13,14 +13,13 @@ html
 
 body
 {
-    background-color: #2f2646;
+    background-color: #29234d;
     display: flex;
     justify-content: center;
     min-width: 100%;
 }
 
 /* Classes */
-
 .container
 {
     display: flex;
@@ -59,7 +58,7 @@ body
     justify-content: center;
     position: fixed;
     bottom: 5%;
-    background-color: #373049;
+    background-color: #322d4d;
     margin: auto;
     width: 450px;
     height: 75px;
@@ -92,6 +91,47 @@ body
     transform: translate(0, -20px);
 }
 
+/* Layout for popup windows */
+#aboutMe, #projects, #tech 
+{
+    transform: scale(0.8);
+    max-width: 1000px;
+    width: 80%;
+    max-height: 600px;
+    height: 80%; 
+    padding: 20px;
+    position: relative;
+    background: rgb(231, 231, 231);
+    margin: 20px auto;
+    border-radius: 20px; 
+}
+
+#closeab, #closepro, #closetech 
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #000;
+    background-color: #FF605C;
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+}
+
+.popup_visible #aboutMe
+{
+    transform: scale(1);
+}
+.popup_visible #projects 
+{
+    transform: scale(1);
+}
+.popup_visible #tech 
+{
+    transform: scale(1);
+}
+
 /* Layout for screens over the 990px breakpoint */
 @media screen and (min-width: 990px)
 {
@@ -99,16 +139,10 @@ body
     {
         position: relative;
         left: 10px;
-        top: -20px;
     }
     .rightCol
     {
         position: relative;
-        top: 75px;
-    }
-    .rightCol .window
-    {
-        width: 350px;
-        height: auto;
+        top: 125px;
     }
 }
