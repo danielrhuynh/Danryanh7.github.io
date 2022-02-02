@@ -6,7 +6,42 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="icon" href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/laptop_1f4bb.png">
         <link rel="stylesheet" href="styles.css">
-        <script src="logic.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <!-- Include jQuery Popup Overlay -->
+        <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+        <script>
+            $(document).ready(function() {
+
+                // Initialize the plugin
+                $('#aboutMe').popup({
+                    transition: '0.3s',
+                    scrolllock: true
+                });
+
+                $('#projects').popup({
+                    transition: '0.3s',
+                    scrolllock: true
+                });
+
+                $('#tech').popup({
+                    transition: '0.3s',
+                    scrolllock: true
+                });
+
+                // Adding close buttons
+                $("#closeab").click(function () {
+                    $('#aboutMe').popup('hide');
+                });
+
+                $("#closepro").click(function () {
+                    $('#projects').popup('hide');
+                });
+
+                $("#closetech").click(function () {
+                    $('#tech').popup('hide');
+                });
+            });
+        </script>
     </head>
     
     <body>
@@ -18,15 +53,15 @@
                     <h6 style="text-align: center; padding-bottom: 10px; font-size: 8pt;">Full-Stack Developer | Engineer | Storyteller</h4>
                 </div>
                 <div class="window">
-                    <img id="aboutMe" style="max-width: 100%; height: auto;" src="resources/about_me.png" alt="About Me">
+                    <img class="aboutMe_open" style="max-width: 100%; height: auto; cursor: pointer;" src="resources/about_me.png" alt="About Me">
                 </div>
             </div>
             <div class="rightCol">
                 <div class="window">
-                    <img style="max-width: 100%; height: auto;" src="resources/projects.png" alt="My Projects!">
+                    <img class="projects_open" style="max-width: 100%; height: auto; cursor: pointer;" src="resources/projects.png" alt="My Projects!">
                 </div>
                 <div class="window">
-                    <img style="max-width: 100%; height: auto;" src="resources/tech_stuff.png" alt="Tech Stuff!">
+                    <img class="tech_open" style="max-width: 100%; height: auto; cursor: pointer;" src="resources/tech_stuff.png" alt="Tech Stuff!">
                 </div>
             </div>
         </div>
@@ -35,8 +70,21 @@
                 <a class="link" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank"><img class="icon" src="resources/linkedin_filled.png" alt="My Linkedin!"></a>
                 <a class="link" href="mailto:d35huynh@uwaterloo.ca" target="_blank"><img class="icon" src="resources/email.png" alt="Email Me!"></a>
                 <a class="link" href="https://github.com/Danryanh7" target="_blank"><img class="icon" src="resources/github.png" alt="My Github!"></a>
-                <a class="link" href="https://open.spotify.com/user/kviblbmvhs7pwspwj44f52eto" target="_blank"><img class="icon" src="resources/spotify.png" alt="My tunes!"></a>
+                <a class="link" href="https://www.spotify.com/ca-en/" target="_blank"><img class="icon" src="resources/spotify.png" alt="My tunes!"></a>
             </div>
+        </div>
+        <!-- Pop ups -->
+        <div id="aboutMe">
+            <h1>About Me</h1>
+            <div id="closeab"></div>
+        </div>
+        <div id="projects">
+            <h1>Projects</h1>
+            <div id="closepro"></div>
+        </div>
+        <div id="tech">
+            <h1>Tech</h1>
+            <div id="closetech"></div>
         </div>
     </body>
 </html>
