@@ -77,7 +77,63 @@ body
 .icon_row a
 {
     display: inline-flex;
-   margin: 0px 20px;
+    margin: 0px 20px;
+}
+
+.modal_header
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.row 
+{
+    display: flex;
+    justify-content: center;
+}
+  
+.column 
+{
+    margin: 0 auto;
+    text-align: center;
+    flex: 50%;
+    padding: 5px;
+    list-style-position: inside;
+}
+
+.text_block
+{
+    text-align: center;
+}
+
+.work
+{
+    background-color: #BB8FCE;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.personal
+{
+    background-color: #7DCEA0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.course
+{
+    background-color: #F1948A ;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-left: 10px;
 }
 
 /* Animations in CSS */
@@ -98,12 +154,12 @@ body
     max-width: 1000px;
     width: 80%;
     max-height: 600px;
-    height: 80%; 
+    height: 85%; 
     padding: 20px;
     position: relative;
     background: rgb(231, 231, 231);
     margin: 20px auto;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 #closeab, #closepro, #closetech 
