@@ -2,7 +2,7 @@
 *
 {
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Quattrocento, Arial, sans-serif;
     font-size: 12pt;
 }
 
@@ -107,10 +107,8 @@ body
 {
     text-align: center;
     flex: 30%;
-    padding: 5px;
+    padding: 10px;
     list-style-position: inside;
-    border: 2px solid rgb(59, 59, 59);
-    margin: 7px;
 }
 
 .text_block
@@ -160,10 +158,25 @@ body
 }
 
 /* Layout for popup windows */
-#aboutMe, #projects, #tech 
+#aboutMe, #projects
 {
     transform: scale(0.8);
     max-width: 1050px;
+    width: 80%;
+    max-height: 650px;
+    height: 85%; 
+    padding: 20px;
+    position: relative;
+    background: rgb(231, 231, 231);
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+#tech
+{
+    transform: scale(0.8);
+    max-width: 900px;
     width: 80%;
     max-height: 650px;
     height: 85%; 
