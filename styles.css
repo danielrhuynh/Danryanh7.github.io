@@ -90,6 +90,7 @@ body
 {
     display: flex;
     justify-content: center;
+    margin: 5px;
 }
   
 .column 
@@ -99,6 +100,17 @@ body
     flex: 50%;
     padding: 5px;
     list-style-position: inside;
+}
+
+.columnThrees 
+{
+    margin: 0 auto;
+    text-align: center;
+    flex: 33%;
+    padding: 5px;
+    list-style-position: inside;
+    border: 1px solid black;
+    margin: 1px;
 }
 
 .text_block
@@ -160,6 +172,7 @@ body
     background: rgb(231, 231, 231);
     margin: 20px auto;
     border-radius: 20px;
+    overflow-y: auto;
 }
 
 #closeab, #closepro, #closetech 
