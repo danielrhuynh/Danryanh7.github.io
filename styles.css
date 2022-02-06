@@ -215,6 +215,29 @@ body
     transform: scale(1);
 }
 
+.typewriter
+{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing 
+{
+    from 
+    { 
+        width: 0 
+    }
+    to 
+    { 
+        width: 100% 
+    }
+}
+
 /* Layout for screens over the 990px breakpoint */
 @media screen and (min-width: 990px)
 {
