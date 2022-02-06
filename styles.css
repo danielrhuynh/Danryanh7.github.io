@@ -14,7 +14,7 @@ html
 
 body
 {
-    background-color: #29234d;
+    background-color: #191f45;
     display: flex;
     justify-content: center;
     min-width: 100%;
@@ -59,7 +59,7 @@ body
     justify-content: center;
     position: fixed;
     bottom: 5%;
-    background-color: #322d4d;
+    background-color: #282c49;
     margin: auto;
     width: 450px;
     height: 75px;
@@ -89,6 +89,7 @@ body
 
 .row 
 {
+    border-collapse: collapse;
     display: flex;
     justify-content: center;
     margin: 5px;
