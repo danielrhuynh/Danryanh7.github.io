@@ -40,7 +40,7 @@ body
 
 .icon
 {
-    max-width: 100%;
+
     border-radius: 10px;
     top: 0;
     transition: transform ease 300ms;
@@ -61,7 +61,7 @@ body
     bottom: 5%;
     background-color: #282c49;
     margin: auto;
-    width: 450px;
+    width: 500px;
     height: 75px;
     border-radius: 50px;
     z-index: 1;
