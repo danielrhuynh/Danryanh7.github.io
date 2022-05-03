@@ -61,7 +61,7 @@ body
     bottom: 5%;
     background-color: #282c49;
     margin: auto;
-    width: 500px;
+    width: 450px;
     height: 75px;
     border-radius: 50px;
     z-index: 1;
@@ -78,7 +78,7 @@ body
 .icon_row a
 {
     display: inline-flex;
-    margin: 0px 20px;
+    margin: 0px 15px;
 }
 
 .modal_header
