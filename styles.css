@@ -40,7 +40,7 @@ body
 
 .icon
 {
-
+    max-width: 55px;
     border-radius: 10px;
     top: 0;
     transition: transform ease 300ms;
