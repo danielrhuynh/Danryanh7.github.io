@@ -168,17 +168,6 @@ body {
     padding: 5px;
 }
 
-.projectsHeader {
-    display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-
-.projectsTitle {
-    text-align: center;
-}
-
 .projectsImage {
     width: 100%;
     height: auto;
