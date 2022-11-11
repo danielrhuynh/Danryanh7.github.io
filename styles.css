@@ -114,7 +114,7 @@ body {
 .column {
     margin: 0 auto;
     text-align: center;
-    flex: 50%;
+    flex: 33%;
     padding: 5px;
     list-style-position: inside;
 }
@@ -169,8 +169,8 @@ body {
 }
 
 .projectsImage {
-    width: 100%;
-    height: auto;
+    width: 301px;
+    height: 170px;
 }
 
 .projectName {
