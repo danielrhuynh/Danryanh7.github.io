@@ -1,19 +1,16 @@
 /* Page Setup */
-*
-{
+* {
     box-sizing: border-box;
     font-family: Quattrocento, Arial, sans-serif;
     font-size: 12pt;
 }
 
-html
-{
+html {
     width: 100%;
     min-width: 100%;
 }
 
-body
-{
+body {
     background-color: #191f45;
     display: flex;
     justify-content: center;
@@ -21,16 +18,41 @@ body
 }
 
 /* Classes */
-.container
-{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 30px;
 }
 
-.window
-{
+.titleContainer {
+    width: 400px;
+    height: auto;
+    margin: 40px 10px;
+    top: 0;
+    background-color: rgb(230, 230, 230);
+    border-radius: 25px;
+}
+
+.titleContainerImage {
+    max-width: 80%;
+    height: auto;
+}
+
+.typewriter {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.window {
     width: 400px;
     height: auto;
     margin: 40px 10px;
@@ -38,23 +60,20 @@ body
     transition: transform ease 300ms;
 }
 
-.icon
-{
+.icon {
     max-width: 55px;
     border-radius: 10px;
     top: 0;
     transition: transform ease 300ms;
 }
 
-.link
-{
+.link {
     max-width: 55px;
     max-height: auto;
     position: relative;
 }
 
-.dock
-{
+.dock {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -67,36 +86,31 @@ body
     z-index: 1;
 }
 
-.icon_row
-{
+.icon_row {
     display: inline-flex;
     justify-content: center;
     padding: 10px 0px;
     max-height: 100%;
 }
 
-.icon_row a
-{
+.icon_row a {
     display: inline-flex;
     margin: 0px 15px;
 }
 
-.modal_header
-{
+.modal_header {
     justify-content: center;
     text-align: center;
 }
 
-.row 
-{
+.row {
     border-collapse: collapse;
     display: flex;
     justify-content: center;
     margin: 5px;
 }
-  
-.column 
-{
+
+.column {
     margin: 0 auto;
     text-align: center;
     flex: 50%;
@@ -104,21 +118,77 @@ body
     list-style-position: inside;
 }
 
-.columnThrees 
-{
+.columnThrees {
     text-align: center;
     flex: 30%;
     padding: 10px;
     list-style-position: inside;
 }
 
-.text_block
-{
+.text_block {
     text-align: center;
 }
 
-.work
-{
+.underlinedText {
+    text-decoration: underline;
+}
+
+.colouredText {
+    color: #3500d3;
+}
+
+.containerIcon {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
+.containerHeader {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.aboutMeTitle {
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.aboutMeParagraph {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.aboutMeImage {
+    width: 300px;
+    height: auto;
+    border: 5px solid rgb(182, 182, 182);
+    padding: 5px;
+}
+
+.projectsHeader {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.projectsTitle {
+    text-align: center;
+}
+
+.projectsImage {
+    width: 100%;
+    height: auto;
+}
+
+.projectName {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.work {
     background-color: #BB8FCE;
     width: 10px;
     height: 10px;
@@ -127,8 +197,7 @@ body
     margin-left: 10px;
 }
 
-.personal
-{
+.personal {
     background-color: #7DCEA0;
     width: 10px;
     height: 10px;
@@ -137,9 +206,8 @@ body
     margin-left: 10px;
 }
 
-.course
-{
-    background-color: #F1948A ;
+.course {
+    background-color: #F1948A;
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -148,24 +216,22 @@ body
 }
 
 /* Animations in CSS */
-.icon:hover
-{
+.icon:hover {
     transform: translate(0, -15px);
 }
 
-.window:hover
-{
+.window:hover {
     transform: translate(0, -20px);
 }
 
 /* Layout for popup windows */
-#aboutMe, #projects
-{
+#aboutMe,
+#projects {
     transform: scale(0.8);
     max-width: 1050px;
     width: 80%;
     max-height: 650px;
-    height: 85%; 
+    height: 85%;
     padding: 20px;
     position: relative;
     background: rgb(231, 231, 231);
@@ -174,13 +240,12 @@ body
     overflow-y: auto;
 }
 
-#tech
-{
+#tech {
     transform: scale(0.8);
     max-width: 900px;
     width: 80%;
     max-height: 650px;
-    height: 85%; 
+    height: 85%;
     padding: 20px;
     position: relative;
     background: rgb(231, 231, 231);
@@ -189,8 +254,9 @@ body
     overflow-y: auto;
 }
 
-#closeab, #closepro, #closetech 
-{
+#closeab,
+#closepro,
+#closetech {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -202,53 +268,37 @@ body
     border-radius: 7px;
 }
 
-.popup_visible #aboutMe
-{
-    transform: scale(1);
-}
-.popup_visible #projects 
-{
-    transform: scale(1);
-}
-.popup_visible #tech 
-{
+.popup_visible #aboutMe {
     transform: scale(1);
 }
 
-.typewriter
-{
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+.popup_visible #projects {
+    transform: scale(1);
 }
 
-@keyframes typing 
-{
-    from 
-    { 
-        width: 0 
+.popup_visible #tech {
+    transform: scale(1);
+}
+
+@keyframes typing {
+    from {
+        width: 0
     }
-    to 
-    { 
-        width: 100% 
+
+    to {
+        width: 100%
     }
 }
 
 /* Layout for screens over the 990px breakpoint */
-@media screen and (min-width: 990px)
-{
-    .leftCol
-    {
+@media screen and (min-width: 990px) {
+    .leftCol {
         position: relative;
         left: 10px;
         top: -25px;
     }
-    .rightCol
-    {
+
+    .rightCol {
         position: relative;
         top: 25px;
     }

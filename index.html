@@ -41,255 +41,302 @@
      `.___.'       `.___.' 
     -->
 <html lang="en">
-    <head>
-        <title>Danny's Website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.8, minimum-scale=0.8, user-scalable=no, minimal-ui"/>
-        <meta property="og:image" content="resources/display_image.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-        <link rel="icon" href="resources/favicons/favicon.png" type="image/png"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="resources/favicons/favicon_120.png" type="image/png"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="resources/favicons/favicon_152.png" type="image/png"/>
-        <link rel="shortcut icon" href="resources/favicons/favicon.png" type="image/png"/>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Space+Mono&family=Work+Sans&display=swap" rel="stylesheet"/>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        
-        <!-- Include jQuery Popup Overlay -->
-        <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
-        <script>
-            console.log("Hey, snooping around?")
-            $(document).ready(function() {
 
-                // Initialize the plugin
-                $('#aboutMe').popup({
-                    transition: '0.3s',
-                    scrolllock: true
-                });
+<head>
+    <title>Danny's Website</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=0.8, minimum-scale=0.8, user-scalable=no, minimal-ui" />
+    <meta property="og:image" content="resources/display_image.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="icon" href="resources/favicons/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/favicons/favicon_120.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/favicons/favicon_152.png" type="image/png" />
+    <link rel="shortcut icon" href="resources/favicons/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Space+Mono&family=Work+Sans&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-                $('#projects').popup({
-                    transition: '0.3s',
-                    scrolllock: true
-                });
+    <!-- Include jQuery Popup Overlay -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+    <script>
+        console.log("Hey, snooping around?")
+        $(document).ready(function () {
 
-                $('#tech').popup({
-                    transition: '0.3s',
-                    scrolllock: true
-                });
-
-                // Adding close buttons
-                $("#closeab").click(function () {
-                    $('#aboutMe').popup('hide');
-                });
-
-                $("#closepro").click(function () {
-                    $('#projects').popup('hide');
-                });
-
-                $("#closetech").click(function () {
-                    $('#tech').popup('hide');
-                });
+            // Initialize the plugin
+            $('#aboutMe').popup({
+                transition: '0.3s',
+                scrolllock: true
             });
-        </script>
-    </head>
-    
-    <body>
-        <div class="container">
-            <div class="leftCol">
-                <div style=" width: 400px; height: auto; margin: 40px 10px; top: 0; background-color: rgb(230, 230, 230); border-radius: 25px;">
-                    <img style="max-width: 80%; height: auto;" src="resources/containerArt/angular_dev.svg" alt="About Me">
-                    <h6 style="text-align: center; margin-top: 5px; font-weight: bold;" class="typewriter">Dan Huynh</h4>
-                    <h6 style="text-align: center; padding-bottom: 10px; font-size: 8pt;" class="typewriter">Full-Stack Developer | Engineer | Storyteller</h4>
-                </div>
-                <div class="window">
-                    <img class="aboutMe_open" style="max-width: 100%; height: auto; cursor: pointer;" src="resources/containerArt/about_me.png" alt="About Me">
-                </div>
+
+            $('#projects').popup({
+                transition: '0.3s',
+                scrolllock: true
+            });
+
+            $('#tech').popup({
+                transition: '0.3s',
+                scrolllock: true
+            });
+
+            // Adding close buttons
+            $("#closeab").click(function () {
+                $('#aboutMe').popup('hide');
+            });
+
+            $("#closepro").click(function () {
+                $('#projects').popup('hide');
+            });
+
+            $("#closetech").click(function () {
+                $('#tech').popup('hide');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftCol">
+            <div class="titleContainer">
+                <img class="titleContainerImage" src="resources/containerArt/angular_dev.svg" alt="About Me">
+                <h6 class="typewriter">
+                    Dan Huynh
+                </h6>
+                <h6 style="text-align: center; padding-bottom: 10px; font-size: 8pt;" class="typewriter">
+                    Full-Stack Developer | Engineer | Storyteller
+                </h6>
             </div>
-            <div class="rightCol">
-                <div class="window">
-                    <img class="projects_open" style="max-width: 100%; height: auto; cursor: pointer;" src="resources/containerArt/projects.png" alt="My Projects!">
-                </div>
-                <div class="window">
-                    <img class="tech_open" style="max-width: 100%; height: auto; cursor: pointer;" src="resources/containerArt/tech_stuff.png" alt="Tech Stuff!">
-                </div>
-            </div>
-        </div>
-        <div class="dock">
-            <div class="icon_row">
-                <a class="link" href="resources/2022_1B_CV.pdf" target="_blank"><img class="icon" src="resources/icons/resumeIcon.png" alt="My resume!"></a>
-                <a class="link" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank"><img class="icon" src="resources/icons/linkedinIcon.png" alt="My Linkedin!"></a>
-                <a class="link" href="mailto:d35huynh@uwaterloo.ca" target="_blank"><img class="icon" src="resources/icons/emailIcon.png" alt="Email Me!"></a>
-                <a class="link" href="https://github.com/Danryanh7" target="_blank"><img class="icon" src="resources/icons/githubIcon.png" alt="My Github!"></a>
-                <a class="link" href="https://open.spotify.com/user/kviblbmvhs7pwspwj44f52eto" target="_blank"><img class="icon" src="resources/icons/spotifyIcon.png" alt="My tunes!"></a>
-            </div>
-        </div>
-        <!-- Pop ups -->
-        <div id="aboutMe">
-            <div class="modal_header">
-                <img src="resources/icons/aboutMeIcon.svg" alt="tech stuff icon" style="width:50px; height:auto; display: inline-block;"/>
-                <h1 style="display: inline-block; position: relative; top: 10px; left: 10px;">About Me</h1>
-            </div>
-            <br>
-            <div id="closeab"></div>
-            <div class="row">
-                <div class="column">
-                    <h6 style="margin-left: 40px; font-weight: bold;">Hey there I’m Dan! 👋</h6>
-                    <br>
-                    <h6 style="margin-left: 40px; text-align: left;">
-                        My journey into engineering is a long one which began with my fascination for space-travel as a kid. 
-                        This led me to enrol at Queen’s University for <span style="color: #3500d3;">mechanical engineering</span> with the goal of becoming an aerospace engineer and developing space crafts. 
-                        As time went on, I became attracted to recent innovations within the tech space such as 
-                        autonomous vehicles, robotics, and the opportunity for further innovation within the same space. 
-                        As someone who also has a love for creation and logical problem-solving, 
-                        I developed an interest in <span style="color: #3500d3;">software development</span> where my childhood friends and I spent hours trying to create modifications for Minecraft using Java. 
-                        This was the first time I felt the satisfaction of creating a product from just an idea!
-                    </h6>
-                    <h6 style="margin-left: 40px; text-align: left;">
-                        I then discovered Mechatronics Engineering which seemed like a discipline created for my exact combination of interests! 
-                        This led me to the <span style="color: #3500d3;">University of Waterloo</span> Where I current study <span style="color: #3500d3;">Mechatronics Engineering</span>.
-                    </h6>
-                    <h6 style="margin-left: 40px; text-align: left;">
-                        I also have a love for football, working out and scrolling endlessly on instagram.
-                    </h6>
-                    <br>
-                    <h6 style="margin-left: 40px; text-align: left;">Check out my <a href="resources/2022_1B_CV.pdf" style="color: #3500d3;" target="_blank"><strong><em>Resume!</em></strong></a></h6>
-                </div>
-                <div class="column">
-                    <img style="width: 300px; height: auto; border: 5px solid rgb(182, 182, 182); padding: 5px;" src="resources/thumbnails/danThumbnail.JPG" alt="Just a pic of me!"/>
-                </div>
+            <div class="window">
+                <img class="aboutMe_open" style="max-width: 100%; height: auto; cursor: pointer;"
+                    src="resources/containerArt/about_me.png" alt="About Me">
             </div>
         </div>
-        <div id="projects">
-            <div class="modal_header">
-                <img src="resources/icons/projectIcon.svg" alt="tech stuff icon" style="width:50px; height:auto; display: inline-block;"/>
-                <h1 style="display: inline-block; position: relative; top: 10px; left: 10px;">Projects</h1>
+        <div class="rightCol">
+            <div class="window">
+                <img class="projects_open" style="max-width: 100%; height: auto; cursor: pointer;"
+                    src="resources/containerArt/projects.png" alt="My Projects!">
             </div>
-            <br>
-            <h6 style="text-align: center;"><em>Here are a few projects I've worked on!</em></h6>
-            <div class="row" style="justify-content: space-between; border: 5px solid rgb(182, 182, 182); padding: 5px;">
-                <div class="columnThrees">
-                    <img style="width: 100%; height: auto;" src="resources/thumbnails/mte121Thumbnail.png" alt="Thumbnail for RobotC code"/>
-                    <br><br>
-                    <h6 style="text-align: center; text-decoration: underline;"><strong>Self-Parking Robot</strong></h6>
-                    <h6>This was my capstone project for MTE-121 (Digital Computation). We designed, constructed, and programmed
-                        an integrated EV3 Mindstorm Robot with <span style="color: #3500d3;">RobotC</span> that uses a few different sensors to actively search for a suitable parking spot in its line of sight, and perform a parallel park.
-                    </h6>
-                </div>
-                <div class="columnThrees" style="background-color: rgb(199, 199, 199); ">
-                    <img style="width: 100%; height: auto;" src="resources/thumbnails/capGuesserThumbnail.png" alt="Thumbnail for CapGuesser"/>
-                    <br><br>
-                    <h6 style="text-align: center; text-decoration: underline;"><strong>CapGuesser</strong></h6>
-                    <h6>CapGuesser is a 3-view ‘Fibbage-esque’ trivia game that teaches you wacky facts, complete with a scoring screen or continuous improvement. 
-                        This was my introduction to iOS development using <span style="color: #3500d3;">Swift / Swift UI</span> and <span style="color: #3500d3;">MVVM</span> architecture.
-                    </h6>
-                </div>
-                <div class="columnThrees">
-                    <img style="width: 100%; height: auto;" src="resources/thumbnails/rosDriverThumbnail.png" alt="Thumbnail a ROS Motor Driver"/>
-                    <br><br>
-                    <h6 style="text-align: center; text-decoration: underline;"><strong>ROS Motor Speed Controller Driver</strong></h6>
-                    <h6>A <span style="color: #3500d3;">ROS</span> driver that publishes and subscribes to a motors status (temperature, voltage), speed, and max-speed.
-                        I built the driver with <span style="color: #3500d3;">C++</span> and wrapped it in <span style="color: #3500d3;">ROS: Noetic</span>. 
-                        I got super comfortable working in <span style="color: #3500d3;">Docker</span> and <span style="color: #3500d3;">Linux</span> environments 
-                        during this project.
-                    </h6>
-                </div>
+            <div class="window">
+                <img class="tech_open" style="max-width: 100%; height: auto; cursor: pointer;"
+                    src="resources/containerArt/tech_stuff.png" alt="Tech Stuff!">
             </div>
-            <br>
-            <h6 style="text-align: center;">More information about these projects can be found on my 
-                <a style="color: #3500d3;" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank">Linkedin</a> 
-                and <a style="color: #3500d3;" href="https://github.com/Danryanh7" target="_blank">Github</a></h6>
-            <div id="closepro"></div>
         </div>
-        <div id="tech">
-            <div class="modal_header">
-                <img src="resources/icons/techIcon.svg" alt="tech stuff icon" style="width:50px; height:auto; display: inline-block;"/>
-                    <h1 style="display: inline-block; position: relative; top: 10px; left: 10px;">Tech Stuff</h1>
-            </div>
-            <br>
-            <div class="text_block">
-                <h6 style="text-align: center;"><em>So far throughout my career, I've used...</em></h6>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h4 style="text-decoration: underline;"><strong>Web Development</strong></h4>
-                        <h8>HTML / CSS</h8>
-                        <div class="work"></div>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>PHP</h8>
-                        <div class="work"></div>
-                        <br>
-                        <h8>JavaScript</h8>
-                        <div class="work"></div>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>JQuery</h8>
-                        <div class="work"></div>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>React</h8>
-                        <div class="course"></div>
-                        <br>
-                        <h8>Django</h8>
-                        <div class="course"></div>
-                        <br>
-                        <h8>Flask</h8>
-                        <div class="work"></div>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                </div>
-                <div class="column">
-                    <h4 style="text-decoration: underline;"><strong>Programming</strong></h4>
-                        <h8>C++</h8>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>C</h8>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>Python</h8>
-                        <div class="work"></div>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>SQL</h8>
-                        <div class="work"></div>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>ROS</h8>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>Swift / Swift UI</h8>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                        <br>
-                        <h8>Git</h8>
-                        <div class="personal"></div>
-                        <div class="course"></div>
-                </div>
-            </div>
-            <div class="text_block">
-                <h4 style="text-decoration: underline;"><strong>Legend:</strong></h4>
-                <h8>Work / Co-op</h8><div class="work"></div>
+    </div>
+    <div class="dock">
+        <div class="icon_row">
+            <a class="link" href="resources/2022_1B_CV.pdf" target="_blank">
+                <img class="icon" src="resources/icons/resumeIcon.png" alt="My resume!">
+            </a>
+            <a class="link" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank">
+                <img class="icon" src="resources/icons/linkedinIcon.png" alt="My Linkedin!">
+            </a>
+            <a class="link" href="mailto:d35huynh@uwaterloo.ca" target="_blank">
+                <img class="icon" src="resources/icons/emailIcon.png" alt="Email Me!">
+            </a>
+            <a class="link" href="https://github.com/Danryanh7" target="_blank">
+                <img class="icon" src="resources/icons/githubIcon.png" alt="My Github!">
+            </a>
+            <a class="link" href="https://open.spotify.com/user/kviblbmvhs7pwspwj44f52eto" target="_blank">
+                <img class="icon" src="resources/icons/spotifyIcon.png" alt="My tunes!">
+            </a>
+        </div>
+    </div>
+    <!-- Pop ups -->
+    <div id="aboutMe">
+        <div class="modal_header">
+            <img src="resources/icons/aboutMeIcon.svg" alt="tech stuff icon" class="containerIcon" />
+            <h1 class="containerHeader">About Me</h1>
+        </div>
+        <br>
+        <div id="closeab"></div>
+        <div class="row">
+            <div class="column">
+                <h6 class="aboutMeTitle">Hey there I’m Dan! 👋</h6>
                 <br>
-                <h8>Personal Project</h8><div class="personal"></div>
+                <h6 class="aboutMeParagraph">
+                    My journey into engineering is a long one which began with my fascination for space-travel as a kid.
+                    This led me to enrol at Queen’s University for <span class="colouredText">mechanical
+                        engineering</span> with the goal of becoming an aerospace engineer and developing space crafts.
+                    As time went on, I became attracted to recent innovations within the tech space such as
+                    autonomous vehicles, robotics, and the opportunity for further innovation within the same space.
+                    As someone who also has a love for creation and logical problem-solving,
+                    I developed an interest in <span class="colouredText">software development</span> where my
+                    childhood friends and I spent hours trying to create modifications for Minecraft using Java.
+                    This was the first time I felt the satisfaction of creating a product from just an idea!
+                </h6>
+                <h6 class="aboutMeParagraph">
+                    I then discovered Mechatronics Engineering which seemed like a discipline created for my exact
+                    combination of interests!
+                    This led me to the <span class="colouredText">University of Waterloo</span> Where I current study
+                    <span class="colouredText">Mechatronics Engineering</span>.
+                </h6>
+                <h6 class="aboutMeParagraph">
+                    I also have a love for football, working out and scrolling endlessly on instagram.
+                </h6>
                 <br>
-                <h8>CS Course</h8><div class="course"></div>
+                <h6 class="aboutMeParagraph">Check out my <a href="resources/2022_1B_CV.pdf"
+                        class="colouredText" target="_blank"><strong><em>Resume!</em></strong></a></h6>
             </div>
-            <br>
-            <div class="text_block">
-                <h8><a style="color: #3500d3;" href="https://www.linkedin.com/in/hannah-guo/" target="_blank">Hannah Guo</a> was a <span style="text-decoration: underline;">HUGE</span> inspiration when creating this website. 
-                    <a style="color: #3500d3;" href="https://www.linkedin.com/in/hannah-guo/" target="_blank">Check her out!</a></h8>
+            <div class="column">
+                <img class="aboutMeImage" src="resources/thumbnails/danThumbnail.JPG" alt="Just a pic of me!" />
             </div>
-            <div id="closetech"></div>
         </div>
-    </body>
+    </div>
+    <div id="projects">
+        <div class="modal_header">
+            <img src="resources/icons/projectIcon.svg" alt="tech stuff icon" class="containerIcon" />
+            <h1 class="containerHeader">Projects</h1>
+        </div>
+        <br>
+        <h6 class="projectsTitle"><em>Here are a few projects I've worked on!</em></h6>
+        <div class="row" style="justify-content: space-between; border: 5px solid rgb(182, 182, 182); padding: 5px;">
+            <div class="columnThrees">
+                <img class="projectsImage" src="resources/thumbnails/mte121Thumbnail.png"
+                    alt="Thumbnail for RobotC code" />
+                <br><br>
+                <h6 class="projectName"><strong>Self-Parking Robot</strong></h6>
+                <h6>This was my capstone project for MTE-121 (Digital Computation). We designed, constructed, and
+                    programmed
+                    an integrated EV3 Mindstorm Robot with <span class="colouredText">RobotC</span> that uses a few
+                    different sensors to actively search for a suitable parking spot in its line of sight, and perform a
+                    parallel park.
+                </h6>
+            </div>
+            <div class="columnThrees" style="background-color: rgb(199, 199, 199); ">
+                <img class="projectsImage" src="resources/thumbnails/capGuesserThumbnail.png"
+                    alt="Thumbnail for CapGuesser" />
+                <br><br>
+                <h6 class="projectName"><strong>CapGuesser</strong></h6>
+                <h6>CapGuesser is a 3-view ‘Fibbage-esque’ trivia game that teaches you wacky facts, complete with a
+                    scoring screen or continuous improvement.
+                    This was my introduction to iOS development using <span class="colouredText">Swift / Swift
+                        UI</span> and <span class="colouredText">MVVM</span> architecture.
+                </h6>
+            </div>
+            <div class="columnThrees">
+                <img class="projectsImage" src="resources/thumbnails/rosDriverThumbnail.png"
+                    alt="Thumbnail a ROS Motor Driver" />
+                <br><br>
+                <h6 class="projectName"><strong>ROS Motor Speed Controller
+                        Driver</strong></h6>
+                <h6>A <span class="colouredText">ROS</span> driver that publishes and subscribes to a motors status
+                    (temperature, voltage), speed, and max-speed.
+                    I built the driver with <span class="colouredText">C++</span> and wrapped it in <span
+                        class="colouredText">ROS: Noetic</span>.
+                    I got super comfortable working in <span class="colouredText">Docker</span> and <span
+                        class="colouredText">Linux</span> environments
+                    during this project.
+                </h6>
+            </div>
+        </div>
+        <br>
+        <h6 class="projectsTitle">More information about these projects can be found on my
+            <a class="colouredText" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank">Linkedin</a>
+            and <a class="colouredText" href="https://github.com/Danryanh7" target="_blank">Github</a>
+        </h6>
+        <div id="closepro"></div>
+    </div>
+    <div id="tech">
+        <div class="modal_header">
+            <img src="resources/icons/techIcon.svg" alt="tech stuff icon" class="containerIcon" />
+            <h1 class="containerHeader">Tech Stuff</h1>
+        </div>
+        <br>
+        <div class="text_block">
+            <h6 class="text_block"><em>So far throughout my career, I've used...</em></h6>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h4 class="underlinedText"><strong>Web Development</strong></h4>
+                <h8>HTML / CSS</h8>
+                <div class="work"></div>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>PHP</h8>
+                <div class="work"></div>
+                <br>
+                <h8>JavaScript</h8>
+                <div class="work"></div>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>JQuery</h8>
+                <div class="work"></div>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>React</h8>
+                <div class="course"></div>
+                <br>
+                <h8>Django</h8>
+                <div class="course"></div>
+                <br>
+                <h8>Flask</h8>
+                <div class="work"></div>
+                <div class="personal"></div>
+                <div class="course"></div>
+            </div>
+            <div class="column">
+                <h4 class="underlinedText"><strong>Programming</strong></h4>
+                <h8>C++</h8>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>C</h8>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>Python</h8>
+                <div class="work"></div>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>SQL</h8>
+                <div class="work"></div>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>ROS</h8>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>Swift / Swift UI</h8>
+                <div class="personal"></div>
+                <div class="course"></div>
+                <br>
+                <h8>Git</h8>
+                <div class="personal"></div>
+                <div class="course"></div>
+            </div>
+        </div>
+        <div class="text_block">
+            <h4 class="underlinedText"><strong>Legend:</strong></h4>
+            <h8>Work / Co-op</h8>
+            <div class="work"></div>
+            <br>
+            <h8>Personal Project</h8>
+            <div class="personal"></div>
+            <br>
+            <h8>CS Course</h8>
+            <div class="course"></div>
+        </div>
+        <br>
+        <div class="text_block">
+            <h8><a class="colouredText" href="https://www.linkedin.com/in/hannah-guo/" target="_blank">Hannah Guo</a>
+                was a <span class="underlinedText">HUGE</span> inspiration when creating this website.
+                <a class="colouredText" href="https://www.linkedin.com/in/hannah-guo/" target="_blank">Check her
+                    out!</a>
+            </h8>
+        </div>
+        <div id="closetech"></div>
+    </div>
+</body>
+
 </html>
