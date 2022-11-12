@@ -176,6 +176,7 @@ body {
 .projectName {
     text-align: center;
     text-decoration: underline;
+    color: #3500d3;
 }
 
 .work {
